@@ -1,6 +1,6 @@
-# radbanker
+# RadBanker
 
-A Banker App
+A Simple Banking Application, made for the Sparks Foundation intern, GRIP, task#2 in App development.
 
 ## Getting Started
 
