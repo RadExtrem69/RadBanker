@@ -95,10 +95,10 @@ class _PeopleState extends State<People> {
                   future: DatabaseHelper.instance.getBankers(),
                   builder: (BuildContext context, AsyncSnapshot<List<Banker>> snapshot) {
                     if (!snapshot.hasData) {
-                      return Center(child: Text('Loading..'));
+                      return Center(child: CircularProgressIndicator());
                     }
                     return snapshot.data!.isEmpty
-                    ? Center(child: Text('No data found, try RELOADING.'),)
+                    ? Center(child: CircularProgressIndicator(),)
                     : ListView(
                       children: snapshot.data!.map((banker) {
                         return Center(

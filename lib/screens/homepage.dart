@@ -20,14 +20,16 @@ class _HomeState extends State<Home> {
         color: Colors.white,
         child: Column(
           children: [
-            SizedBox(height: 80,),
+            SizedBox(height: 50,),
             Container(
               height: 240,
               child: Center(
                   child: Image.asset('assets/logo.png')
               ),
             ),
-            SizedBox(height: 100,),
+            SizedBox(height: 20,),
+            Text('A Simple Banking App.', style: TextStyle(fontSize: 20),),
+            SizedBox(height: 60,),
             Container(
               height: 45,
               width: 200,
@@ -54,7 +56,7 @@ class _HomeState extends State<Home> {
 
               ),
             ),
-            SizedBox(height: 30,),
+            SizedBox(height: 20,),
             Container(
               height: 45,
               width: 200,
